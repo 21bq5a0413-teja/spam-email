@@ -37,7 +37,7 @@ def main():
                 if result[0] == 0:
                     st.success("This is Not A Spam Email")
                 else:
-                    st.success("This is A spam Email)
+                    st.success("This is A spam Email")
 
             # Accuracy check using pre-saved test data
             if st.button("Accuracy"):
