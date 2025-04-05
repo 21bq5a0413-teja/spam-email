@@ -1,12 +1,8 @@
 import streamlit as st
 import pickle
-from win32com.client import Dispatch
 import pythoncom
 from sklearn.metrics import accuracy_score, precision_score
 
-def speak(text):
-    speak_engine = Dispatch("SAPI.SpVoice")
-    speak_engine.Speak(text)
 
 def about_section():
     st.subheader("About Email Spam Classification App")
