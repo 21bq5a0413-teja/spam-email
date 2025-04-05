@@ -36,10 +36,7 @@ def main():
                 result = model.predict(vect)
                 if result[0] == 0:
                     st.success("This is Not A Spam Email")
-                    speak("This is Not A Spam Email")
                 else:
-                    st.error("This is A Spam Email, be aware of viewing this messages")
-                    speak("This is A Spam Email, be aware of viewing this messages")
 
             # Accuracy check using pre-saved test data
             if st.button("Accuracy"):
